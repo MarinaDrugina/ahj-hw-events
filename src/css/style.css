@@ -53,18 +53,6 @@ body {
     justify-content: space-between;
 }
 
-.timer-field {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 30px;
-    width: 200px;
-    height:  200px;
-    border: 2px solid rgb(0, 195, 255);
-    color: blanchedalmond;
-    justify-content: space-around;
-}
-
 .player-score {
     width: 200px;
     height:  200px;

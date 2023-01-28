@@ -20,7 +20,7 @@ export default class Board {
 
   setSize() {
     let size = 0;
-    do { size = +prompt('Выберете величину стороны поля, от 2 до 8', 8); }
+    do { size = +prompt('Выберете величину стороны поля, от 2 до 8', 4); }
 
     while (size < 2 || size > 8 || Number.isInteger(size) === false || typeof size !== 'number');
     return size;
