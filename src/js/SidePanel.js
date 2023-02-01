@@ -1,6 +1,7 @@
 export default class SidePanel {
   constructor() {
     this.createSidePanel();
+    this.createTimer();
     this.createPlayerScore();
     this.createGoblinScore();
   }
@@ -10,6 +11,21 @@ export default class SidePanel {
     const sidePanel = document.createElement('div');
     sidePanel.className = 'side-panel';
     body.append(sidePanel);
+  }
+
+  createTimer() {
+    const sidePanel = document.querySelector('.side-panel');
+    const timerField = document.createElement('div');
+    timerField.className = 'timer-field';
+    sidePanel.append(timerField);
+    const timeNote = document.createElement('p');
+    timeNote.className = 'note';
+    timeNote.textContent = 'Goblin jumps in:';
+    timerField.append(timeNote);
+    const timer = document.createElement('p');
+    timer.className = 'timer';
+    timerField.append(timer);
+    timer.textContent = 3;
   }
 
   createPlayerScore() {
